@@ -1,0 +1,72 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: VisionWear-User
+  profiles:
+    active: dev
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 20MB
+  main:
+    allow-bean-definition-overriding: true
+  datasource:
+    driver-class-name: ${vision.datasource.driver-class-name}
+    url: ${vision.datasource.user.url}
+    username: ${vision.datasource.user.username}
+    password: ${vision.datasource.user.password}
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath*:/mapper/**/*.xml
+
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    path: /swagger-ui.html # Swagger UI的路径（Knife4j增强后主要用doc.html）
+  group-configs:
+    # 认证模块分组
+    - group: 'auth'
+      paths-to-match: '/api/auth/**'
+      packages-to-scan: com.wtu.controller
+    # 用户模块分组
+    - group: 'user'
+      paths-to-match: '/api/user/**'
+      packages-to-scan: com.wtu.controller
+
+
+knife4j:
+  enable: true
+  production: false
+
+
+logging:
+  level:
+    com:
+      wtu:
+        mapper: debug
+        service: info
+        controller: info
+
+
+vision:
+  jwt:
+    secretKey: ${vision.jwt.secret-key}
+    ttl: ${vision.jwt.ttl}
+    tokenName: ${vision.jwt.token-name}
+  api:
+    key: ${vision.api.secret-key}
+    url: ${vision.api.url}
+
+  maxSize: 10485760
+
+wtu:
+  alioss:
+    endpoint: ${vision.alioss.endpoint}
+    access-key-id: ${vision.alioss.access-key-id}
+    access-key-secret: ${vision.alioss.access-key-secret}
+    bucket-name: ${vision.alioss.bucket-name}
