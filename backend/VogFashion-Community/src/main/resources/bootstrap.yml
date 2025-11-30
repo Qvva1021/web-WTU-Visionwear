@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: VogFashion-Community # 服务名称
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      server-addr: 8.155.5.178:8848
+      discovery:
+        namespace: dev-GaoChen # 服务注册发现的命名空间
+      config:
+        namespace: dev-GaoChen # 配置中心的命名空间
+        file-extension: yml # 文件后缀名
+        shared-configs: # 共享配置
+          - dataId: shared.jdbc.yml # 共享mybatis配置
+          - dataId: shared.log.yml # 共享日志配置
+          - dataId: shared.swagger.yml # 共享swagger配置
+          - dataId: shared-redis.yml # 共享redis配置
+

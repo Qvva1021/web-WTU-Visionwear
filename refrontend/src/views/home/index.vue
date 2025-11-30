@@ -31,7 +31,7 @@ const list = [
 </script>
 <template>
 	<div class="homeContainer">
-		<h1>欢迎使用 VisionWear</h1>
+		<h1>欢迎使用 VogFashion</h1>
 		<p class="des">AI定义时尚，科技塑造未来</p>
 		<p class="funcNav">功能导航</p>
 		<ul class="navList">

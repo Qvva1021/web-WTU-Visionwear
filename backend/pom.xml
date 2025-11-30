@@ -10,12 +10,12 @@
     <description>backend</description>
 
     <modules>
-        <module>VisionWear-User</module>
-        <module>VisionWear-Image</module>
-        <module>VisionWear-Community</module>
-        <module>VisionWear-Common</module>
-        <module>VisionWear-GateWay</module>
-        <module>VisionWear-Api</module>
+        <module>VogFashion-User</module>
+        <module>VogFashion-Image</module>
+        <module>VogFashion-Community</module>
+        <module>VogFashion-Common</module>
+        <module>VogFashion-GateWay</module>
+        <module>VogFashion-Api</module>
     </modules>
 
     <packaging>pom</packaging>

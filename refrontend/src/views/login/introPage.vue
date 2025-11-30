@@ -29,7 +29,7 @@
 								<div class="logo-sparkle">✨</div>
 							</div>
 							<div class="logo-content">
-								<span class="logo-text">VisionWear</span>
+								<span class="logo-text">VogFashion</span>
 								<span class="logo-tagline">AI时尚先锋</span>
 							</div>
 						</div>
@@ -110,7 +110,7 @@
 								<div class="title-cursor"></div>
 							</h1>
 							<p class="hero-description">
-								VisionWear将前沿AI技术与时尚设计完美融合，为您打造个性化穿搭方案与独特风格体验。
+								VogFashion将前沿AI技术与时尚设计完美融合，为您打造个性化穿搭方案与独特风格体验。
 							</p>
 							<div class="hero-features">
 								<div class="feature-item">
@@ -343,7 +343,7 @@
 					<div class="content-text">
 						<h2 class="section-title">智能时尚的新时代</h2>
 						<p class="section-description">
-							VisionWear
+							VogFashion
 							利用最先进的人工智能技术，结合对时尚潮流的深入理解，为每位用户提供量身定制的时尚体验。
 							无论您是追求个性风格还是希望跟上最新潮流，我们的平台都能满足您的需求。
 						</p>
@@ -424,7 +424,7 @@
 			<div class="container">
 				<div class="section-header">
 					<h2 class="section-title">常见问题</h2>
-					<p class="section-subtitle">快速了解VisionWear</p>
+					<p class="section-subtitle">快速了解VogFashion</p>
 					<div class="title-decoration"></div>
 				</div>
 
@@ -481,11 +481,11 @@
 			<div class="container">
 				<div class="footer-content">
 					<div class="footer-logo">
-						<span class="logo-text">VisionWear</span>
+						<span class="logo-text">VogFashion</span>
 						<span class="logo-tagline">AI时尚先锋</span>
 					</div>
 					<p class="footer-text">
-						&copy; {{ new Date().getFullYear() }} VisionWear. 保留所有权利。
+						&copy; {{ new Date().getFullYear() }} VogFashion. 保留所有权利。
 					</p>
 				</div>
 			</div>
@@ -591,13 +591,13 @@ const partners = ref([
 
 const faqs = ref([
 	{
-		question: "VisionWear的AI技术准确度如何？",
+		question: "VogFashion的AI技术准确度如何？",
 		answer:
 			"我们的AI经过数百万时尚数据训练，准确度达到95%以上，能够精准理解您的个人风格和偏好。",
 		open: false,
 	},
 	{
-		question: "使用VisionWear需要付费吗？",
+		question: "使用VogFashion需要付费吗？",
 		answer:
 			"我们提供免费的基础功能，包括基本的穿搭建议。高级功能如个性化定制、专业搭配师咨询等需要升级会员。",
 		open: false,
@@ -611,7 +611,7 @@ const faqs = ref([
 	{
 		question: "支持哪些设备使用？",
 		answer:
-			"VisionWear支持所有主流设备，包括手机、平板、电脑，同时提供iOS和Android原生应用。",
+			"VogFashion支持所有主流设备，包括手机、平板、电脑，同时提供iOS和Android原生应用。",
 		open: false,
 	},
 ])
@@ -683,14 +683,14 @@ const testimonials = ref([
 		name: "张小姐",
 		role: "时尚博主",
 		avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-		text: "VisionWear彻底改变了我的穿衣方式！AI推荐的搭配总是令人惊艳，省去了我大量选择服装的时间。",
+		text: "VogFashion彻底改变了我的穿衣方式！AI推荐的搭配总是令人惊艳，省去了我大量选择服装的时间。",
 		date: "2024年12月",
 	},
 	{
 		name: "李先生",
 		role: "企业经理",
 		avatar: "https://randomuser.me/api/portraits/men/32.jpg",
-		text: "作为一个对时尚了解不多的人，VisionWear为我提供了专业级别的穿搭建议，让我在各种场合都能得体亮相。",
+		text: "作为一个对时尚了解不多的人，VogFashion为我提供了专业级别的穿搭建议，让我在各种场合都能得体亮相。",
 		date: "2024年11月",
 	},
 	{

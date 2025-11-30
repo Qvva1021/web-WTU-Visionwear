@@ -1,7 +1,7 @@
 <template>
   <div class="welcome-container">
     <div class="welcome-card">
-      <h1 class="welcome-title">欢迎使用 VisionWear</h1>
+      <h1 class="welcome-title">欢迎使用 VogFashion</h1>
       <p class="welcome-subtitle">AI定义时尚，科技塑造未来</p>
       
       <div class="feature-section">

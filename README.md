@@ -1,4 +1,4 @@
-# VisionWear - AI时尚图像生成平台
+# VogFashion - AI时尚图像生成平台
 
 [功能特性](#-核心功能) • [技术架构](#-技术架构) • [快速开始](#-快速开始) • [部署指南](#-部署指南)
 
@@ -7,7 +7,7 @@
 
 ## 📖 项目简介
 
-VisionWear 是一个集成了多种AI图像生成技术的时尚设计平台，致力于将前沿AI技术与时尚设计完美融合。平台提供多样化的图像生成能力，包括文本生成图像、风格转换、线稿成图、局部重绘等功能，同时构建了完整的用户社区生态，让用户可以创作、分享和交流时尚设计作品。
+VogFashion 是一个集成了多种AI图像生成技术的时尚设计平台，致力于将前沿AI技术与时尚设计完美融合。平台提供多样化的图像生成能力，包括文本生成图像、风格转换、线稿成图、局部重绘等功能，同时构建了完整的用户社区生态，让用户可以创作、分享和交流时尚设计作品。
 
 ### ✨ 项目特色
 
@@ -52,12 +52,12 @@ VisionWear 是一个集成了多种AI图像生成技术的时尚设计平台，�
 
 | 模块 | 端口 | 说明 |
 |------|------|------|
-| **VisionWear-GateWay** | 8080 | API网关，统一入口，路由转发，认证拦截 |
-| **VisionWear-User** | 8081 | 用户服务，负责用户注册、登录、个人信息管理 |
-| **VisionWear-Image** | 8082 | 图像服务，负责AI图像生成、处理、存储 |
-| **VisionWear-Community** | 8083 | 社区服务，负责帖子、点赞、收藏、评论等 |
-| **VisionWear-Common** | - | 公共模块，提供通用工具类、配置、异常处理 |
-| **VisionWear-Api** | - | API模块，定义Feign客户端接口 |
+| **VogFashion-GateWay** | 8080 | API网关，统一入口，路由转发，认证拦截 |
+| **VogFashion-User** | 8081 | 用户服务，负责用户注册、登录、个人信息管理 |
+| **VogFashion-Image** | 8082 | 图像服务，负责AI图像生成、处理、存储 |
+| **VogFashion-Community** | 8083 | 社区服务，负责帖子、点赞、收藏、评论等 |
+| **VogFashion-Common** | - | 公共模块，提供通用工具类、配置、异常处理 |
+| **VogFashion-Api** | - | API模块，定义Feign客户端接口 |
 
 ---
 
@@ -173,7 +173,7 @@ VisionWear 是一个集成了多种AI图像生成技术的时尚设计平台，�
 ```
 web-qvva-WtuCode/
 ├── backend/                          # 后端微服务项目
-│   ├── VisionWear-GateWay/          # API网关服务
+│   ├── VogFashion-GateWay/          # API网关服务
 │   │   ├── src/main/java/com/wtu/
 │   │   │   ├── config/              # 网关配置（CORS等）
 │   │   │   ├── controller/          # Swagger资源控制器
@@ -183,7 +183,7 @@ web-qvva-WtuCode/
 │   │       ├── application.yml       # 应用配置
 │   │       └── bootstrap.yml        # 启动配置
 │   │
-│   ├── VisionWear-User/             # 用户服务
+│   ├── VogFashion-User/             # 用户服务
 │   │   ├── src/main/java/com/wtu/
 │   │   │   ├── controller/          # 用户控制器
 │   │   │   ├── service/             # 用户业务逻辑
@@ -193,7 +193,7 @@ web-qvva-WtuCode/
 │   │   │   └── vo/                  # 视图对象
 │   │   └── src/main/resources/
 │   │
-│   ├── VisionWear-Image/            # 图像服务
+│   ├── VogFashion-Image/            # 图像服务
 │   │   ├── src/main/java/com/wtu/
 │   │   │   ├── controller/          # 图像控制器
 │   │   │   ├── service/             # 图像业务逻辑（AI生成）
@@ -203,7 +203,7 @@ web-qvva-WtuCode/
 │   │   │   └── vo/                  # 响应VO
 │   │   └── src/main/resources/
 │   │
-│   ├── VisionWear-Community/        # 社区服务
+│   ├── VogFashion-Community/        # 社区服务
 │   │   ├── src/main/java/com/wtu/
 │   │   │   ├── controller/          # 帖子控制器
 │   │   │   ├── service/             # 帖子业务逻辑
@@ -212,7 +212,7 @@ web-qvva-WtuCode/
 │   │   │   └── dto/                 # 帖子DTO
 │   │   └── src/main/resources/
 │   │
-│   ├── VisionWear-Common/            # 公共模块
+│   ├── VogFashion-Common/            # 公共模块
 │   │   ├── src/main/java/com/wtu/
 │   │   │   ├── config/              # 公共配置（Redis、OSS等）
 │   │   │   ├── entity/              # 公共实体
@@ -223,7 +223,7 @@ web-qvva-WtuCode/
 │   │   │   └── properties/          # 配置属性类
 │   │   └── src/main/resources/
 │   │
-│   ├── VisionWear-Api/              # API模块
+│   ├── VogFashion-Api/              # API模块
 │   │   └── src/main/java/com/wtu/
 │   │       └── client/              # Feign客户端接口
 │   │
@@ -313,14 +313,14 @@ cd web-qvva-WtuCode
 ```yaml
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/visionwear?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    url: your_url
     username: your_username
     password: your_password
   
   data:
     redis:
       host: localhost
-      port: 6379
+      port: your_port
       password: your_redis_password
 ```
 
@@ -343,19 +343,19 @@ ali:
 
 ```bash
 # 1. 启动网关服务
-cd backend/VisionWear-GateWay
+cd backend/VogFashion-GateWay
 mvn spring-boot:run
 
 # 2. 启动用户服务
-cd ../VisionWear-User
+cd ../VogFashion-User
 mvn spring-boot:run
 
 # 3. 启动图像服务
-cd ../VisionWear-Image
+cd ../VogFashion-Image
 mvn spring-boot:run
 
 # 4. 启动社区服务
-cd ../VisionWear-Community
+cd ../VogFashion-Community
 mvn spring-boot:run
 ```
 
@@ -404,7 +404,7 @@ npm run dev
 编辑 `frontend/src/api/request.js`，将 `baseURL` 修改为生产环境地址：
 
 ```javascript
-const baseURL = 'http://8.155.5.178:8080/api'  // 生产环境网关地址
+const baseURL = 'your_baseurl'  // 生产环境网关地址
 ```
 
 **后端配置**：
@@ -432,7 +432,7 @@ chmod +x deploy.sh
 cd backend
 mvn clean package -DskipTests
 # 将生成的JAR包上传到服务器并运行
-java -jar VisionWear-User/target/VisionWear-User-0.0.1-SNAPSHOT.jar
+java -jar VogFashion-User/target/VogFashion-User-0.0.1-SNAPSHOT.jar
 ```
 
 **前端部署**：
@@ -453,7 +453,7 @@ server {
 
     # 前端静态资源
     location / {
-        root /opt/vision-wear/dist;
+        root /opt/vogfashion/dist;
         try_files $uri $uri/ /index.html;
     }
 
